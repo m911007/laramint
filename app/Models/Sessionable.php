@@ -16,5 +16,5 @@ class Sessionable extends Model
     }
 
 
-    
+
 }

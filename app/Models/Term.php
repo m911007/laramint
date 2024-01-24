@@ -18,7 +18,7 @@ class Term extends Model
     protected $guarded = [];
 
     // make difference get lists for super-admin and other roles.
-    // this part helps us to get clear list of supervisior and teacher with 
+    // this part helps us to get clear list of supervisior and teacher with
     // correct access to each term
 
     /** @phpstan-ignore-next-line */
@@ -84,7 +84,7 @@ class Term extends Model
     }
 
 
-  
+
 
     public function WorkoutByUser(User $user): HasMany
     {

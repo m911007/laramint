@@ -33,7 +33,7 @@ class Document extends Model
      * @return MorphTo
      */
     public function Sessions(): MorphTo
-    {        
+    {
         return $this->morphTo(Session::class);
     }
 

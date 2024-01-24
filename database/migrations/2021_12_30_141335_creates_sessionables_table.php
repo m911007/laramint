@@ -14,7 +14,7 @@ class CreatesSessionablesTable extends Migration
     public function up()
     {
         Schema::create('sessionables', function (Blueprint $table) {
-            $table->id();            
+            $table->id();
             $table->unsignedBigInteger('session_id');
             $table->foreign('session_id')->references('id')->on('sessions')->cascadeOnDelete();
             $table->smallInteger('order')->default(1);
