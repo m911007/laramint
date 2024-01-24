@@ -22,7 +22,7 @@
                                     <form class="user" method="post" action="{{ route('login') }}">
                                         @csrf
                                         <div class="form-group">
-                                            <input name="email" type="email" 
+                                            <input name="email" type="email"
                                             class="form-control form-control-user @error('email') is-invalid @enderror"
                                                 id="email" aria-describedby="email"
                                                 placeholder="Enter Email Address...">
@@ -30,7 +30,7 @@
                                                 <span class="invalid-feedback" role="alert">
                                                     {{ $message }}
                                                 </span>
-                                            @enderror    
+                                            @enderror
                                         </div>
                                         <div class="form-group">
                                             <input name="password" type="password"
@@ -40,7 +40,7 @@
                                                 <span class="invalid-feedback" role="alert">
                                                     {{ $message }}
                                                 </span>
-                                            @enderror  
+                                            @enderror
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -50,9 +50,9 @@
                                             </div>
                                         </div>
                                         <input value="Login" type="submit" class="btn btn-primary btn-user btn-block" />
-                                        
+
                                         <hr>
-                                        
+
                                     </form>
 
                                     <label>super admin:</label><br/>
@@ -66,12 +66,12 @@
                                     <strong>username: </strong><span>student@laramint.com</span><br/>
                                     <hr>
 
-                                    {{-- <div class="text-center">
+                                    <div class="text-center">
                                         <a class="small" href="forgot-password">Forgot Password?</a>
                                     </div>
                                     <div class="text-center">
                                         <a class="small" href="register">Create an Account!</a>
-                                    </div> --}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -83,5 +83,5 @@
         </div>
 
     </div>
-    
+
 @endsection
